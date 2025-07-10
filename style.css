@@ -1,0 +1,83 @@
+    /* ===== RESET ===== */
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.5;background:#fff}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    :root{
+      --azul:#004aad;
+      --azul-escuro:#00316f;
+      --cinza-claro:#f8f8f8;
+      --branco:#ffffff;
+    }
+
+    /* ===== UTIL ===== */
+    .container{max-width:1170px;margin-inline:auto;padding-inline:1rem}
+    section{padding-block:3rem}
+    .btn{display:inline-block;background:var(--azul);color:var(--branco);padding:.75rem 2.5rem;border-radius:4px;font-weight:600;transition:opacity .3s}
+    .btn:hover{opacity:.85}
+
+    /* ===== HEADER ===== */
+    .logo-img {
+      height: 50px;
+      max-height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+    
+    header{background:var(--branco);box-shadow:0 2px 4px rgba(0,0,0,.05);position:sticky;top:0;z-index:999}
+    .nav-wrapper .logo {
+      display: flex;
+      align-items: center;
+    }
+    nav ul{display:flex;gap:1.5rem;list-style:none;font-weight:600}
+    nav li a:hover{color:var(--azul)}
+    .whatsapp-link{font-weight:700;color:var(--azul)}
+    .menu-toggle{display:none;font-size:1.6rem;background:none;border:none;color:var(--azul);cursor:pointer}
+    @media(max-width:640px){nav ul{display:none;flex-direction:column;gap:1rem;background:var(--branco);position:absolute;right:1rem;top:70px;padding:1rem;box-shadow:0 4px 10px rgba(0,0,0,.1)}.menu-toggle{display:block}}
+
+
+
+    /* ===== INDICATIVOS ===== */
+    .indicativos{background:url('https://images.unsplash.com/photo-1526788984383-6d08dcd0f7e9?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;color:var(--branco)}
+    .metricos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .metric-box{background:var(--azul);padding:2rem 1rem;text-align:center;border-radius:6px}
+    .metric-box h3{font-size:2rem;font-weight:700;margin-bottom:.25rem}
+    .metric-box span{font-size:.9rem;font-weight:600;letter-spacing:.5px}
+
+    /* ===== TEASER ===== */
+    .cases-teaser{text-align:center}
+
+    /* ===== SOBRE ===== */
+    .anos{background:var(--azul-escuro);color:var(--branco);text-align:center}
+    .anos h2{font-size:2rem;margin-bottom:1rem}
+    .anos p{max-width:700px;margin-inline:auto;margin-bottom:2rem}
+    .anos .assinatura{font-style:italic;font-weight:600}
+
+    /* ===== SERVIÇOS ===== */
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+    .card{border:1px solid #e3e3e3;border-radius:6px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.06);background:var(--branco)}
+    .card h3{padding:1rem;font-size:1.2rem;background:var(--cinza-claro)}
+
+    /* ===== SLIDER PARCEIROS ===== */
+    .slider{position:relative;overflow:hidden}
+    .slide-track{display:flex;transition:transform .5s ease}
+    .slide-track img{width:160px;flex-shrink:0;margin-inline:1rem;filter:grayscale(100%);opacity:.8}
+    .slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.4);border:none;color:var(--branco);font-size:1.5rem;padding:.2rem .6rem;cursor:pointer}
+    .slider-btn.prev{left:5px}
+    .slider-btn.next{right:5px}
+
+    /* ===== CONTATO ===== */
+    .contato-cta{display:flex;flex-wrap:wrap;align-items:center;gap:2rem;background:var(--cinza-claro)}
+    .contato-cta img{max-width:280px}
+    .contato-info{flex:1;min-width:250px}
+    .contato-info h3{margin-bottom:1rem;color:var(--azul)}
+    .contato-info a{display:block;margin-bottom:.5rem;font-weight:600}
+    .form-contato{margin-top:1rem}
+    .form-contato input,.form-contato textarea{width:100%;padding:.6rem;border:1px solid #ccc;border-radius:4px;margin-bottom:.7rem}
+    .form-contato button{background:var(--azul);color:var(--branco);padding:.6rem 1.2rem;border:none;border-radius:4px;font-weight:600;cursor:pointer}
+
+    /* ===== WHATSAPP FLOAT ===== */
+    .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:1000;background:#25D366;width:54px;height:54px;display:flex;align-items:center;justify-content:center;border-radius:6px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+    .wa-float svg{font-size:1.8rem;color:#fff}
+    .wa-float:hover{background:#1ebe5d}

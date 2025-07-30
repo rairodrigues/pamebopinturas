@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.menu-container a.email {
+    color: #000;
+}
+
+.menu-container a.whatsapp {
+    color: #25D366;
+}
+
+.menu-container a:hover {
+    background: #1E2A63;
+    color: #fff !important;
+}
+
+.menu-container a:hover i {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        flex-direction: column;
+    }
+}
+
+.imagem-destaque img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
